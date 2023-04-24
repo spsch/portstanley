@@ -7,6 +7,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -67,12 +70,22 @@
 
         <!-- Denní menu v JGP-->
         <div class="container-xxl py-5 bg-dark mb-5">
-            <div class="container text-center my-5 pt-5 pb-4">
-                <nav aria-label="breadcrumb">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Středa 19.4. 2023</h1>
-                    <img src="img\denni_nabidka\20230419_ST.jpg">
-                </nav>
-            </div>
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <nav aria-label="breadcrumb">
+                        <!-- Datum a čas -->
+                        <h1 class="display-3 text-white mb-3 animated slideInDown"></h1>    
+                            <div class="display-date">
+                                <span id="day">day</span>
+                                <span id="daynum">00</span>.
+                                <span id="month">month</span>
+                                <span id="year">0000</span>
+                            </div>
+                            <script src="js\datetime.js"></script>
+                        </h1>
+                            <!--<h1 class="display-3 text-white mb-3 animated slideInDown">Čtvrtek 20.4. 2023</h1>-->
+                        <img src="img\denni_nabidka\denni_menu.jpg">
+                    </nav>
+                </div>
         </div>
         
         
