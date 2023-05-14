@@ -9,3 +9,17 @@
   =>  Author Website   : https://htmlcodex.com
 
   =>  About HTML Codex : HTML Codex is one of the top creators and publishers of Free HTML templates, HTML landing pages, HTML email templates and HTML snippets in the world. Read more at ( https://htmlcodex.com/about-us )
+
+
+  <!-- <?php
+
+$filename = 'PA.jpg';
+$dir = ' /www/doc/www.portstanley.cz/www/img/denni_nabidka';
+echo 'Deleting file in denni nabidka: ' . $dir .'/'. $filename;
+echo 'Server root: ' . $_SERVER['DOCUMENT_ROOT'];
+
+if (unlink( $dir .'/'. $file)) {
+	echo 'The file ' . $filename . ' was deleted successfully!';
+} else {
+	echo 'There was a error deleting the file ' . $filename;
+} -->

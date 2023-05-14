@@ -3,13 +3,10 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Restaurace Port Stanley</title>
+    <title>Restoran - Bootstrap Restaurant Template</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="-1" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -33,9 +30,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-
-    <!-- Script for pop up-->
-    
 </head>
 
 <body>
@@ -48,30 +42,12 @@
         </div>
         <!-- Spinner End -->
 
-        <!-- Pop Up Start-->
-        <!-- let's call the following div as the POPUP FRAME -->
-    <div id="popup" class="popup panel panel-primary">
-        
-        <!-- and here comes the image -->
-        <!-- <img src="img\volba_sladku\volba_sladku.jpg" alt="popup"> -->
-        <img src="img\volba_sladku\volba_sladku.jpg" alt="popup">
-            
-            <!-- Now this is the button which closes the popup-->
-        <div class="panel-footer">
-                <button id="close" class="btn btn-sm btn-primary pull-right">Zavřít</button>
-        </div>
-            
-            <!-- and finally we close the POPUP FRAME-->
-            <!-- everything on it will show up within the popup so you can add more things not just an image -->
-    </div>
-
-        <!-- Pop Up End-->
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand p-0">
-                    <h2 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restaurace Port Stanley</h2>
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Port Stanley</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -96,71 +72,74 @@
             </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container my-5 py-5">
-                    <div class="row align-items-center g-5">
-                        <div class="col-lg-6 text-center text-lg-start">
-                            <h1 class="display-3 text-white animated slideInLeft">Restaurace Port Stanley</h1>
-                            <p class="text-white animated slideInLeft mb-4 pb-2">„…divoké bouře donutily mnoho lodí přistát a nechat si zde opravit loď. Výhodná poloha ostrova způsobila, že se později z přístavu stala základna pro lov velryb a tuleňů. Vznikl Port Stanley…“</p>
-                        </div>
-                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
-                            <img class="img-fluid" src="img\gril_nudle_round.png" alt="">
-                        </div>
-                    </div>
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <h1 class="display-3 text-white mb-3 animated slideInDown">Galerie</h1>
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.hml">Domů</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Galerie</li>
+                        </ol>
+                    </nav>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
 
 
-        <!-- Service Start -->
-        <div class="container-xxl py-5">
+        <!-- Team Start -->
+        <div class="container-xxl pt-5 pb-3">
             <div class="container">
+                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Galerie Port Stanley</h5>
+                    <h1 class="mb-5">Klid a pohodlí uprostřed Holešovic</h1>
+                </div>
                 <div class="row g-4">
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
-                                <h5>Příjemná atmosféra</h5>
-                                <p>Šťavnatý steak, těstoviny, nebo osvěžující salát?</p>
-                            </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <img class="img-fluid" src="img\bar_lednice.jpg" alt="bar_lednice">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                                <h5>Chutné polévky</h5>
-                                <p>Česká klasika nebo lehká Itálie? Objdnávejte na <a href="https://wolt.com/en/cze/prague/restaurant/port-stanley">Wolt</a>!
-                                </p>
-                            </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <img class="img-fluid" src="img\bar_pohled.jpg" alt="bar-pohled">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                                <h5>Speciality šéfkuchaře</h5>
-                                <p>Je jen na Vás, jakou pochoutku si zvolíte z naší jídelní nabídky.</p>
-                            </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <img class="img-fluid" src="img\bar_vstup.jpg" alt="bar_vstup">
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
-                        <div class="service-item rounded pt-3">
-                            <div class="p-4">
-                                <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                                <h5>Čerstvé suroviny</h5>
-                                <p>Maso, zelenina, vše jen čerstvé! Vše i rozvozem na 
-                                <a href="https://www.foodora.cz/restaurant/f9wp/port-stanley">Foodora CZ</a>!</p>
-                            </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <img class="img-fluid" src="img\interier01.jpg" alt="interier01">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <img class="img-fluid" src="img\interier02.jpg" alt="interier02">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <img class="img-fluid" src="img\interier03.jpg" alt="interier03">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <img class="img-fluid" src="img\restaurace_lodka.jpg" alt="restaurace_lodka">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item text-center rounded overflow-hidden">
+                            <img class="img-fluid" src="img\auto.jpg" alt="auto">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Service End -->
-
-
+        <!-- Team End -->
         
+
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
