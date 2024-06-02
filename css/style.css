@@ -5,6 +5,12 @@
     --dark: #0F172B;
 }
 
+.responsive {
+    width: auto ;
+    max-width: 100% ;
+    height: auto;
+}
+
 .ff-secondary {
     font-family: 'Pacifico', cursive;
 }
@@ -32,9 +38,18 @@
     margin:0 auto;
     top: 50%;
     left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        -o-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     box-shadow: 0px 0px 50px 2px #000;
     z-index: 9999;
+    @media (max-width: 500px) {
+        #yourimage {
+          display: block;
+        }
+    }
 }
 
 /*** Spinner ***/
