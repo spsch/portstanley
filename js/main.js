@@ -64,6 +64,12 @@
             e.preventDefault();
             $("#popup").fadeOut(1000);
         });
+
+        function closePopUp() {
+            document.getElementById('popup').style.display = 'none';
+        }
+
+        document.getElementById('popup').addEventListener('click', closePopUp);
     });
     
     // Back to top button
