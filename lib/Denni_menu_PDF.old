@@ -1,0 +1,52 @@
+<!--Denni menu v PDF-->
+            <div class="container-xxl py-5 bg-dark mb-5">
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">Domů</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Denní Menu</li>
+                        </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb">
+                        <!-- Datum a čas -->
+                        <h1 class="display-3 text-white mb-3 animated slideInDown"></h1>    
+                            <div class="display-date">
+                                <span id="day">day</span>
+                                <span id="daynum">00</span>.
+                                <span id="month">month</span>
+                                <span id="year">0000</span>
+                            </div>
+                            <script src="js\datetime.js"></script>
+                        </h1>
+                        <!--Menu v PDF-->
+                        <iframe class="pdfmenu" src="img/denni_nabidka/denni_menu.pdf"></iframe>
+                    </nav>
+                </div>
+        </div>
+
+        <!--Denni menu v PDF embedded-->
+        <div class="container-xxl py-5 bg-dark mb-5">
+            <div class="container text-center my-5 pt-5 pb-4">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center text-uppercase">
+                        <li class="breadcrumb-item"><a href="index.html">Domů</a></li>
+                        <li class="breadcrumb-item text-white active" aria-current="page">Denní Menu</li>
+                    </ol>
+                </nav>
+                <nav aria-label="breadcrumb">
+                    <!-- Datum a čas -->
+                    <h1 class="display-3 text-white mb-3 animated slideInDown"></h1>    
+                        <div class="display-date">
+                            <span id="day">day</span>
+                            <span id="daynum">00</span>.
+                            <span id="month">month</span>
+                            <span id="year">0000</span>
+                        </div>
+                        <script src="js\datetime.js"></script>
+                    </h1>
+                    <!--Menu v PDF pomoci embedded-->
+                    <embed class="responsive" src="img/denni_nabidka/denni_menu.pdf"
+                    
+                </nav>
+            </div>
+    </div>

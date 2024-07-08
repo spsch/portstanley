@@ -10,8 +10,6 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="-1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -76,44 +74,33 @@
             </nav>            
         </div>
 
-        <!--Denni menu v PDF-->
+        <!-- Denní menu v JGP-->
         <div class="container-xxl py-5 bg-dark mb-5">
-            <div class="container text-center my-5 pt-5 pb-4">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb justify-content-center text-uppercase">
-                        <li class="breadcrumb-item"><a href="index.html">Domů</a></li>
-                        <li class="breadcrumb-item text-white active" aria-current="page">Denní Menu</li>
-                    </ol>
-                </nav>
-                <nav aria-label="breadcrumb">
-                    <!-- Datum a čas -->
-                    <h1 class="display-3 text-white mb-3 animated slideInDown"></h1>
-                </nav>   
-                        <div class="display-date">
-                            <span id="day">day</span>
-                            <span id="daynum">00</span>.
-                            <span id="month">month</span>
-                            <span id="year">0000</span>
-                        </div>
-                        <script src="js/datetime.js"></script>
-                    </h1>   
-            </div>
+                <div class="container text-center my-5 pt-5 pb-4">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb justify-content-center text-uppercase">
+                            <li class="breadcrumb-item"><a href="index.html">Domů</a></li>
+                            <li class="breadcrumb-item text-white active" aria-current="page">Denní Menu</li>
+                        </ol>
+                    </nav>
+                    <nav aria-label="breadcrumb">
+                        <!-- Datum a čas -->
+                        <h1 class="display-3 text-white mb-3 animated slideInDown"></h1>    
+                            <div class="display-date">
+                                <span id="day">day</span>
+                                <span id="daynum">00</span>.
+                                <span id="month">month</span>
+                                <span id="year">0000</span>
+                            </div>
+                            <script src="js\datetime.js"></script>
+                        </h1>
+                        <img src="img\denni_nabidka\denni_menu.jpg" alt="Denní menu připravujeme...">
+                        <!-- <img src="img\restaurant_closed.jpg" alt="Denní menu připravujeme..."> -->
+                    </nav>
+                </div>
         </div>
         <!-- Back to Top -->
         <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
-    <!--Menu v PDF-->
-    <div id="adobe-dc-view">
-        <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
-            <script type="text/javascript">
-                document.addEventListener("adobe_dc_view_sdk.ready", function(){
-                var adobeDCView = new AdobeDC.View({clientId: "04caa9aa312e43e3b52f1f363b45644c", divId: "adobe-dc-view"});
-                    adobeDCView.previewFile({
-                        content:{location: {url: "img/denni_nabidka/denni_menu.pdf"}},
-                        metaData:{fileName: "denni_menu.pdf"}
-                    }, {embedMode: "IN_LINE"});
-                });
-        </script>
     </div>
 
     <!-- JavaScript Libraries -->
@@ -129,7 +116,7 @@
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
