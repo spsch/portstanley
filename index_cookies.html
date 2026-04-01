@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +8,9 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="-1" />
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
@@ -30,9 +34,38 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+    <!-- Script for pop up-->
+    
 </head>
 
 <body>
+    <div id="cookie-banner" style="position:fixed;bottom:0;left:0;width:100%;background:#222;color:#fff;z-index:9999;padding:20px;display:none;">
+    <div style="max-width:600px;margin:auto;">
+        <p>
+            Tento web používá cookies. Vyberte, které chcete povolit:
+        </p>
+        <form id="cookie-form">
+            <label>
+                <input type="checkbox" name="basic" checked disabled>
+                Základní (nutné)
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="analytic">
+                Analytické
+            </label>
+            <br>
+            <label>
+                <input type="checkbox" name="preferences">
+                Preferenční
+            </label>
+            <br><br>
+            <button type="submit" style="margin-right:10px;" class="btn btn-primary btn-sm">Uložit volbu</button>
+            <button type="button" id="cookie-reject" class="btn btn-secondary btn-sm">Odmítnout vše kromě nutných</button>
+        </form>
+    </div>
+</div>
     <div class="container-xxl bg-white p-0">
         <!-- Spinner Start -->
         <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
@@ -42,13 +75,32 @@
         </div>
         <!-- Spinner End -->
 
+        <!-- Pop Up Start-->
+        <!-- let's call the following div as the POPUP FRAME -->
+        <div id="popup" class="popup panel panel-primary">
+        
+            <!-- and here comes the image -->
+            <img src="img/volba_sladku/volba_rezist_res.jpg" alt="popup" class="responsive">
+            <!-- <img src="img/akce/zavreno_08_2025.png" alt="popup" class="responsive"> -->
+            
+            <!--img src="img/zavreno_07_2025.jpg" alt="popup" class="responsive"-->
+                
+                <!-- Now this is the button which closes the popup-->
+            <div class="panel-footer">
+                    <button id="close" class="btn btn-sm btn-primary pull-right">Zavřít</button>
+            </div>
+                
+                <!-- and finally we close the POPUP FRAME-->
+                <!-- everything on it will show up within the popup so you can add more things not just an image -->
+        </div>
+
+        <!-- Pop Up End-->
 
         <!-- Navbar & Hero Start -->
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="index.html" class="navbar-brand p-0">
                     <h2 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restaurace Port Stanley</h2>
-                    <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
                     <span class="fa fa-bars"></span>
@@ -72,58 +124,74 @@
             </nav>
 
             <div class="container-xxl py-5 bg-dark hero-header mb-5">
-                <div class="container text-center my-5 pt-5 pb-4">
-                    <h1 class="display-3 text-white mb-3 animated slideInDown">Akční nabídka a Volba sládků</h1>
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="index.html">Domů</a></li>
-                            <li class="breadcrumb-item text-white active" aria-current="page">Akce</li>
-                        </ol>
-                    </nav>
+                <div class="container my-5 py-5">
+                    <div class="row align-items-center g-5">
+                        <div class="col-lg-6 text-center text-lg-start">
+                            <h1 class="display-3 text-white animated slideInLeft">Restaurace</h1>
+                            <h1 class="display-3 text-white animated slideInLeft">Port Stanley</h1>
+                            <p class="text-white animated slideInLeft mb-4 pb-2"><i>„…divoké bouře donutily mnoho lodí přistát a nechat si zde opravit loď. Výhodná poloha ostrova způsobila, že se později z přístavu stala základna pro lov velryb a tuleňů. Vznikl Port Stanley…“</i></p>
+                            <p class="text-primary m-0"><i>Vážení hosté, restaurace bude uzavřena od 9.8. do 24.8. 2025. Omlouváme se a děkujeme za pochopení.</i></p>
+                        </div>
+                        <div class="col-lg-6 text-center text-lg-end overflow-hidden">
+                            <img class="img-fluid" src="img\gril_nudle_round.png" alt="nudlicky">
+                            <!--<img class="="img-fluid" src="img/2024_kolo.png" alt="kolotoc">-->
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
         <!-- Navbar & Hero End -->
 
 
-        <!-- Akcni Nabidka Start -->
+        <!-- Service Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title ff-secondary text-center text-primary fw-normal">Restaurace Port Stanley</h6>
-                    <h1 id="cepovane_pivo" class="mb-5">Akční nabídka</h1>
-                    <h3 class="mb-5">Radegast Ratar</h3>
-                    <img src="img/volba_2026_leden_Ratar.jpg" alt="volba_sladku"><br><br>
-                    <p class="text-center">
-                        <b>Radegast Ratar dozrál v intenzivně hořký ležák. Stále ale zůstává tím nejvíce hořkým pivem v portfoliu nošovického pivovaru. Díky prémiovému chmelu Polaris si i nadále zachovává rataří charakter.                        
-                        </b>
-                    </p>
-                    <p class="text-center">Alkohol: 4,5 %</p>
-                    <p class="text-center">Stupňovitost: 11 % EPM</p>
-                    <p class="text-center">Hořkost: 42 IBU</p>
-                    <!--<p class="text-center">Barva: 12 EBC</p>-->
-                    <p class="text-center">Chmely: Polaris</p>
-                    <!-- <p class="text-center">Slady: Plzeňský, karamelový</p> -->
-                    <p class="text-center">Typ: světlý ležák</p>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
+                                <h5>Příjemná atmosféra</h5>
+                                <p>Na čepu Plzeň 12°, Radegast 10° a k tomu vynikající servis.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
+                                <h5>Chutné polévky</h5>
+                                <p>Česká klasika nebo lehká Itálie? Objdnávejte na <a href="https://wolt.com/en/cze/prague/restaurant/port-stanley">Wolt</a>!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-drumstick-bite text-primary mb-4"></i>
+                                <h5>Speciality šéfkuchaře</h5>
+                                <p>Šťavnatý steak, těstoviny, nebo osvěžující salát? Je to jen na Vás!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="service-item rounded pt-3">
+                            <div class="p-4">
+                                <i class="fa fa-3x fa-fish text-primary mb-4"></i>
+                                <h5>Čerstvé suroviny</h5>
+                                <p>Maso, zelenina, vše jen čerstvé! Vše i rozvozem na 
+                                <a href="https://www.foodora.cz/restaurant/f9wp/port-stanley">Foodora CZ</a>!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <!-- Akcni Nabidka End -->
+        <!-- Service End -->
 
-        <!-- Akcni Nabidka Start -->
-        <!-- <div class="container-xxl py-5">
-            <div class="container">
-                <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h6 class="section-title ff-secondary text-center text-primary fw-normal">Restaurace Port Stanley</h6>
-                    <h1 id="cepovane_pivo" class="mb-5">Akční nabídka</h1>
-                    <h3 class="mb-5">Restaurace uzavřena</h3>
-                    <img src="img/akce/zavreno_08_2025.png" alt="volba_sladku" class="responsive"><br><br>
-                    <p class="text-center"><b></b></p>
-                    <p class="text-center">Těšíme se na Vás znovu po 24.8.2025!</p>
-            </div>
-        </div> -->
-        <!-- Akcni Nabidka End -->
+
         
-
         <!-- Footer Start -->
         <div class="container-fluid bg-dark text-light footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
             <div class="container py-5">
@@ -133,7 +201,6 @@
                         <a class="btn btn-link" href="about.html">O nás</a>
                         <a class="btn btn-link" href="contact.html">Kontakt</a>
                         <a class="btn btn-link" href="contact.html">Rezervace</a>
-                        
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Kontaktní adresa</h4>
@@ -150,7 +217,7 @@
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Otevírací doba</h4>
                         <h5 class="text-light fw-normal">Pondělí - Pátek</h5>
-                        <p>11:00-22:00</p>
+                        <p>11:00-23:00</p>
                         <h5 class="text-light fw-normal">Sobota - Neděle</h5>
                         <p>Zavřeno</p>
                     </div>
@@ -175,7 +242,7 @@
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <a href="index.html">Domů</a>
-                                <a href="index.html">Cookies</a>
+                                <a href="https://uoou.gov.cz/verejnost/qa-otazky-a-odpovedi/cookies">Cookies</a>
                             </div>
                         </div>
                     </div>
@@ -203,6 +270,7 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script src="js/cookie-banner.js"></script>
 </body>
 
 </html>

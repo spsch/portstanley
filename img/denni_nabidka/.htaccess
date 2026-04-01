@@ -1,0 +1,3 @@
+php_flag last_modified 1
+php_flag track_errors 1
+php_value opcache.enable 0
